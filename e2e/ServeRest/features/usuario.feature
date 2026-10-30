@@ -1,5 +1,5 @@
 # language: pt
-
+@usuario
 Funcionalidade: Cadastro de usuários
     Como um visitante do sistema,
     Quero preencher um formulário com meus dados básicos e senha para criar uma nova conta,

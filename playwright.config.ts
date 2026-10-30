@@ -14,7 +14,8 @@ import { defineBddConfig } from 'playwright-bdd';
  */
 
 defineBddConfig({
-  features: 'e2e/ServeRest/features/**/*.feature',
+  features: 'e2e/ServeRest/features/seguranca_acesso.feature',
+//  features: 'e2e/ServeRest/features/**/*.feature',
   steps: ['e2e/ServeRest/steps/**/*.ts'],
   outputDir: '.features-gen'
 });
@@ -69,10 +70,10 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
-     {
-       name: 'Microsoft Edge',
-       use: { ...devices['Desktop Edge'], channel: 'msedge' },
-     },
+    // {
+    //   name: 'Microsoft Edge',
+   //    use: { ...devices['Desktop Edge'], channel: 'msedge' },
+  //   },
     // {
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },

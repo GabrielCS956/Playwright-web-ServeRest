@@ -8,8 +8,8 @@ Funcionalidade: Controle de sessão e segurança
 Esquema do Cenário: Tentar acessar página autenticada após o logout como administrador
     Dado que estou logado no sistema com perfil de administrador
     E realizo o logout da minha conta
-    Quando tento acessar a página "<pagina>" diretamente pela URL
-    Então devo ser redirecionado para a tela de login
+    Quando tento acessar a página de admin "<pagina>" diretamente pela URL
+    Então devo ser redirecionado para a página de login
 
     Exemplos:
     | pagina             | 
@@ -24,7 +24,7 @@ Esquema do Cenário: Tentar acessar página autenticada após o logout como usu�
     Dado que estou logado no sistema com perfil de usuário comum
     E realizo o logout da minha conta
     Quando tento acessar a página "<pagina>" diretamente pela URL
-    Então devo ser redirecionado para a tela de login
+    Então devo ser redirecionado para a página de login
 
     Exemplos:
     | pagina                | 
