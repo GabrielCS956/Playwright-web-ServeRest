@@ -14,7 +14,7 @@ import { defineBddConfig } from 'playwright-bdd';
  */
 
 defineBddConfig({
-  features: 'e2e/ServeRest/features/seguranca_acesso.feature',
+  features: 'e2e/ServeRest/features/gerenciamento_produtos.feature',
 //  features: 'e2e/ServeRest/features/**/*.feature',
   steps: ['e2e/ServeRest/steps/**/*.ts'],
   outputDir: '.features-gen'

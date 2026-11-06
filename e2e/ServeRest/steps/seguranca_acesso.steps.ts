@@ -7,19 +7,6 @@ import { UserCredentials, UsuarioPage } from '../pages/usuarioPage';
 
 const { Given, When, Then } = createBdd();
 
-// Tentar acessar página autenticada após o logout como administrador
-Given('que estou logado no sistema com perfil de administrador', async ({ page }) => {
-    const usuarioPage = new UsuarioPage(page);
-    await usuarioPage.navigate();
-    const adminCredentials: UserCredentials = await usuarioPage.createUserAdmin();
-    const loginPage = new LoginPage(page);
-    await loginPage.navigate();
-    await loginPage.fillEmail(adminCredentials.email);
-    await loginPage.fillPassword(adminCredentials.password);
-    await loginPage.clickLogin();
-
-});
-
 Given('realizo o logout da minha conta', async ({ page }) => {
     const segurancaAcessoPage = new SegurancaAcessoPage(page);
     await segurancaAcessoPage.logoutButton();

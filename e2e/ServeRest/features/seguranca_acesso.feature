@@ -6,7 +6,7 @@ Funcionalidade: Controle de sessão e segurança
     Para garantir a segurança dos meus dados
 
 Esquema do Cenário: Tentar acessar página autenticada após o logout como administrador
-    Dado que estou logado no sistema com perfil de administrador
+    Dado que estou logado com perfil de administrador
     E realizo o logout da minha conta
     Quando tento acessar a página de admin "<pagina>" diretamente pela URL
     Então devo ser redirecionado para a página de login
